@@ -1,4 +1,4 @@
-# QA Engineer Assessment Project 
+# QA Engineer Assessment Project - Case Study
 
 A complete QA automation project covering UI end-to-end tests, API tests, and load tests, built for the QA Engineer Assessment.
 
@@ -86,7 +86,7 @@ Run on Firefox:
 pytest tests/ -v --browser=firefox
 ```
 
-Run only the main careers test:
+Run only the Task 1:
 
 ```bash
 pytest tests/test_case_study_1.py -v
@@ -193,4 +193,4 @@ The demo form validation test (`tests/test_demo_form_validation.py`) was generat
 
 - The UI tests accept all cookies via the browser's cookie consent banner automatically. This is required for the Lever.co API to set job listing links dynamically on the careers page.
 - All tests are designed to run end-to-end without manual intervention beyond the initial `pip install`.
-- AI was **not** used for Task 2 (Load Tests) or Task 3 (API Tests). This is noted in the `/prompts/` directory.
+- AI was used for all three tasks. Prompt iterations for Task 2 (Load Tests) and Task 3 (API Tests) are documented in the `/prompts/` directory alongside Task 1 prompts.
