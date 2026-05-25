@@ -1,6 +1,6 @@
-# QA Engineer Assessment Project — Insider One
+# QA Engineer Assessment Project 
 
-A complete QA automation project covering UI end-to-end tests, API tests, and load tests, built for the Insider One QA Engineer Assessment.
+A complete QA automation project covering UI end-to-end tests, API tests, and load tests, built for the QA Engineer Assessment.
 
 ---
 
