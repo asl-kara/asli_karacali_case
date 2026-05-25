@@ -20,13 +20,12 @@ class CareersPage:
         self.wait.until(EC.title_contains("Careers"))
 
     def click_see_all_teams(self) -> None:
-        btn: WebElement = self.wait.until(
+        see_all_btn: WebElement = self.wait.until(
             EC.element_to_be_clickable(self._SEE_ALL_TEAMS_BTN)
         )
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'instant'});", btn)
-        btn.click()
+        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'instant'});", see_all_btn)
+        see_all_btn.click()
         self.wait.until(EC.presence_of_element_located(self._DEPARTMENT_ITEM))
-        # Wait for page auto-scroll to push QA section above viewport
         self.wait.until(lambda d: d.execute_script(
             "return document.querySelector(\"[data-department='Quality Assurance']\").getBoundingClientRect().bottom < 0"
         ))
